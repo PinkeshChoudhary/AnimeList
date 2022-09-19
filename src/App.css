@@ -36,3 +36,80 @@
     transform: rotate(360deg);
   }
 }
+.title{
+  width: fit-content;
+  margin: 5px;
+  color: black;
+  font-size: 16px;
+}
+.image{
+  height : 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.rank{
+  width: fit-content;
+  margin: 7px;
+}
+.animedetails{
+  padding: 2px;
+}
+.search{
+  align-items: center;
+    border: 1px solid #90ee90;
+    border-radius: 999px;
+    display: flex;
+    
+    justify-content: center;
+    padding: 10px;
+    width : 30vw
+}
+.searchbtn{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0.5px 1px rgb(0 0 0 / 10%);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.searchvalue{
+  width: inherit;
+    height: 1rem;
+    border: none;
+    outline: none;
+}
+.imagesynopis{
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  background-color: #fff
+}
+.detailpageimage{
+  height: 500px;
+  
+  
+}
+.detailsynopsis{
+  margin-left: 2em;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-right: 2em;
+  
+}
+.episodes{
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 2em;
+  flex-direction: column;
+}
