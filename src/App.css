@@ -41,6 +41,7 @@
   margin: 5px;
   color: black;
   font-size: 16px;
+  height: 2.7rem;
 }
 .image{
   height : 250px;
@@ -58,13 +59,12 @@
 }
 .search{
   align-items: center;
-    border: 1px solid #90ee90;
-    border-radius: 999px;
+    border-right : 1px solid gray;
     display: flex;
-    
+    padding: 4px 8px;
     justify-content: center;
-    padding: 10px;
-    width : 30vw
+    width : 30vw;
+    max-width : 16rem;
 }
 .searchbtn{
   display: flex;
@@ -113,3 +113,70 @@
   padding: 2em;
   flex-direction: column;
 }
+.prevnextbtn{
+  position: absolute;
+  bottom: 0;
+  padding-right: 2em;
+  right: 0;
+  padding-bottom: 0.5em;
+}
+.previousbtn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 7px;
+  border-radius: 10px;
+}
+.nextbtn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 21px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+.cart-container {
+  margin: 0 8px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  width: 25%;
+  background: #fff;
+  padding: 16px;
+  min-width: 240px;
+  margin-left: auto;
+  max-width: 20%;
+  max-height: 69vh;
+  overflow: auto;
+}
+
+.cart-title {
+  font-weight: 500;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0px 3px;
+  padding: 4px 8px;
+  align-items: center;
+  padding: 8px;
+  background-color: #FBFBFB;
+}
+.select{
+  width: 10rem;
+ 
+}
+.select select{
+  border: #969494;
+  width: 159px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-size: 16px;
+}
+.watchlistcard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

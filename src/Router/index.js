@@ -9,13 +9,10 @@ const Router = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-
-            <Route path="/" element={isLoggedin ? <Home /> : <Login />} />
-
-             <Route path="/anime/:id" element={<AnimeDetails />} />
+                    <Route path="/" element={isLoggedin ? <Home /> : <Login />} />
+                    <Route path="/anime/:id" element={<AnimeDetails />} />
                 </Routes>
             </BrowserRouter>
-
         </div>
     )
 }

@@ -4,14 +4,14 @@ import { SearchClass } from '../Styled'
 export const Search = ({ searchHandler }) => {
     const [text, setText] = useState("")
 
-     const handleSearch =() =>{
-      searchHandler(text)
-     }
+    const handleSearch = () => {
+        searchHandler(text)
+    }
 
     return (
         <SearchClass>
             <div className='search'>
-                <input type='text' value={text} className ='searchvalue'
+                <input type='text' value={text} className='searchvalue'
                     onChange={(e) => setText(e.target.value)}
                 />
             </div>
