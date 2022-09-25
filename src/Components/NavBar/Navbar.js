@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav , Title} from '../../Styled'
+import { Nav } from '../../Styled'
 
 
 export const Navbar = ({title}) => {

@@ -9,6 +9,8 @@ export const Nav = styled.div`
   justify-content : center;
   align-items : center;
   color : black;
+  font-size : 20px;
+  font-weight :500;
 `;
 
 export const Title = styled.div`
@@ -20,6 +22,7 @@ export const Title = styled.div`
   margin: 10px;
   font-weight: 400;
   margin-right: auto;
+  margin-left : 8px;
 `;
 
 export const Button = styled.button`
@@ -37,16 +40,18 @@ export const Button = styled.button`
 export const AnimeCtnr = styled.div`
   display: flex;
   flex-wrap: wrap;
-  height : 74vh;
+  height : 77vh;
   overflow : auto;
   justify-content: center;
   gap: 12px;
-  width : 69%;
-  max-height: 74vh;
+  min-width : 70%;
+  max-height: 77vh;
   background-color: #ffff;
   border: 1px solid gray;
   border-radius: 4px;
-  margin-left: 6px;
+  @media only screen and (max-width: 800px) {
+      min-width : 48%;
+  }
 `
 export const LoaderComponent = styled.div`
 width: 100%;
@@ -62,7 +67,7 @@ width: 100%;
   align-items: center;
 
 `
-export const AnimeList = styled.div`
+export const AnimeCard = styled.div`
 margin : 1em;
 width : 12em;
 background-color : #fff;

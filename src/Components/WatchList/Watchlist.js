@@ -16,7 +16,7 @@ export const Watchlist = (props) => {
   return (
     <>
       <div className="cart-container"
-        droppable={true}
+        droppable= "true"
         onDragOver={(e) => e.preventDefault()}
         onDrop={onDrop}
 
@@ -25,11 +25,11 @@ export const Watchlist = (props) => {
         <div className="watchlistcard">
 
           {props.watchList.length > 0 ?
-            props.watchList.map((el) => <WatchAnimeCard item={el}
+            props.watchList.map((el) => <WatchAnimeCard key= {el.mal_id} item={el}
               deleteAnimeCard={props.deleteAnimeCard} />)
             :
             <p style={{ marginTop: '5rem' }}>
-              Your wishlist is empty...
+              Your Watchist is empty...
             </p>
           }
         </div>

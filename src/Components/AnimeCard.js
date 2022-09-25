@@ -1,8 +1,8 @@
 import React from 'react'
-import { AnimeList } from '../Styled'
+import { AnimeCard } from '../Styled'
 import { useNavigate } from 'react-router-dom'
 
-export const AnimeCard = (props) => {
+export const AnimeItem = (props) => {
     const navigate = useNavigate();
 
     const detailsPageHandler = (e) => {
@@ -13,9 +13,17 @@ export const AnimeCard = (props) => {
     const dragStart = (e) => {
         e.dataTransfer.setData('item_id', props.mal_id)
     }
+    const getFontSize = () =>{
+        const title_len = props.title.length
+        if(title_len>35 && title_len< 45){
+            return "14px"
+        } else if(title_len >44){
+          return '12px'
+        } else return "16px"
+    }
 
     return (
-        <AnimeList onClick={detailsPageHandler}
+        <AnimeCard onClick={detailsPageHandler}
             draggable={true}
             onDragStart={(e) => dragStart(e)}
             onDragOver={(e) => e.preventDefault()}>
@@ -25,20 +33,11 @@ export const AnimeCard = (props) => {
             </div>
             <div className='animedetails'>
 
-                <p className='title'> {props.title}</p>
+                <p className='title' style={{fontSize: getFontSize()}}> {props.title}</p>
                 <div className='rank'>
-                    Rank-  <span style={{
-                        lineHeight: 'normal',
-                        display: 'inline-block',
-                        color: '#fff',
-                        padding: '2px 4px 2px 6px',
-                        borderRadius: '3px',
-                        fontWeight: '500',
-                        fontSize: '12px',
-                        backgroundColor: '#388e3c'
-                    }}>{props.rank}</span>
+                    Rank-  <span className= "spanrank" >{props.rank}</span>
                 </div>
             </div>
-        </AnimeList>
+        </AnimeCard>
     )
 }
