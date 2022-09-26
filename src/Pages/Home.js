@@ -19,7 +19,10 @@ export const Home = () => {
 
     useEffect(() => {
         const localData = JSON.parse(localStorage.getItem('items'))
-        setWatchList(localData)
+        if(localData){
+            setWatchList(localData)
+            return
+        }
     }, [])
 
     useEffect(() => {
